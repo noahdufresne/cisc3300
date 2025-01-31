@@ -1,0 +1,5 @@
+1. HTML stands for Hypertext Markup Language, which is the standard language for making websites.
+2. The Fordham website has a header, split sections, and a footer. The sections split up information to make it easier for users to find.
+3. An HTML element is content on a web page; a tag defines an element, and an attribute supplies extra information about an element.
+4. Semantic elements are intended to convey meaning by their element type(even if the element is indistinguishable from other elements visually). Structural elements affect the structure of a page but don't convey any meaning through their element type.
+5. The default behavior for submitting a form is 'Submit query'.
