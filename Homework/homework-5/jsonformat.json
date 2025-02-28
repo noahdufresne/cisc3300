@@ -1,0 +1,14 @@
+{
+    "people": [
+        {
+            "id": "0001",
+            "title": "Mother",
+            "bio": "Someone who physically gives birth to their children"
+        },
+        {
+            "id": "0002",
+            "title": "Father",
+            "bio": "A male who helps their counerpart oversee their children"
+        }
+    ]
+}

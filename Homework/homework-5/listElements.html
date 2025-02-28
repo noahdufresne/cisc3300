@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Click a List Item to Change its Color</h2>
+    <ul id="color-list">
+        <li data-color="black">Black and</li>
+        <li data-color="yellow">Yellow</li>
+        <li data-color="black">Black</li>
+        <li data-color="yellow">and Yellow</li>
+    </ul>
+
+    <script>
+        document.querySelectorAll("#color-list li").forEach(item => {
+            item.addEventListener("click", function () {
+                this.style.backgroundColor = this.getAttribute("data-color");
+            });
+        });
+    </script>
+</body>
+
+</html>

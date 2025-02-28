@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Multi Car Business</title>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .clicker {
+            width: 200px;
+            height: 70px;
+            background-color: goldenrod;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .item {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <button id="ajax-get" class="clicker">Load Cars</button>
+    <div id="items-container"></div>
+
+    <script>
+        $('#ajax-get').on('click', function () {
+            $.ajax({
+                url: 'http://localhost:8888/index.php?cars',
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    $('#items-container').html("");
+                    $.each(data, function (key, value) {
+                        $('#items-container').append(`
+                            <div class="item">
+                                <strong>Brand:</strong> ${value['brand']} <br>
+                                <strong>Price:</strong> ${value['price']}
+                            </div>
+                        `);
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX Error:", status, error);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

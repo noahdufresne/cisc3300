@@ -1,0 +1,18 @@
+1. What is the DOM? What is meant by the DOM tree? 
+	DOM stands for Document Object Model, a programming interface for web documents. It represents the document as nodes and objects so the programming language can interact with the page. A model stored in the browsers’ memory contains the document, element, attribute, and text nodes.
+
+2. What is an XSS attack? How do they work? How can you guard against them? 
+	An XSS attack is where an attacker could gain access to a user’s accounts. When a malicious user adds code to an input, eventually generated as HTML, the code could be run for different users through innerHTML or jQuery methods. To guard against it, you must be careful about what you treat as HTML, rarely have the option to show input from the user, and if there is an input, there must be options to validate the input, strip tags, escaping characters, and more. 
+
+3. What is an event in JavaScript? What kind of events can you respond to with code? 
+	Events in JavaScript are actions that happen in a browser. There are mouse, keyboard, form, touch, window, and drag and drop events.
+
+4. How does a DOM eventListener work? What are the parameters it is expecting? 
+	A DOM event listener waits for a specific event on a target element and executes a function when it occurs. It has the event type, the function to run, and an optional boolean for event capture.
+
+
+5. What is jQuery? Why use it? How do we load jQuery onto a page? 
+	 jQuery is a JavaScript library that simplifies DOM manipulation and event handling. It increases code simplicity and developer productivity. jQuery can be loaded onto a page through a CDN.​
+
+6. What is AJAX? JSON? The HTTP method types and what they do? 
+	AJAX enables web pages to be updated asynchronously by fetching data from the server. JSON is a lightweight data format that is simple for people to read and write and easy for computers to understand and generate. The HTTP methods are GET, POST, DELETE, PUT, PATCH, and they are create, read, update, and delete operations.
