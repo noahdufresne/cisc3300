@@ -1,0 +1,15 @@
+1. Define hoisting and closures in JS.
+Hoisting in javascript is where variables, functions, and arguments are created, and closures in javascript are where, for every execution context, the scope is the current execution context’s variables object and the variables object for each parent execution context.
+
+2. What is PHP? What do server side languages do in web development?
+PHP stands for Hypertext Preprocessor and is an all-purpose open-source scripting language. PHP is a server-side language that allows the website to process user input and interact with other servers.
+
+3. What are some examples of how the PHP and JavaScript programming languages are alike and differ? 
+PHP and JavaScript are both originally dynamically typed languages that adopted object-oriented principles. However, their execution differs where Javascript uses a prototype-based system and modern class syntax while PHP uses OOP similarly to Java or C#.
+
+4. Why pick PHP over another server side scripting language like Python or Node?
+It’s a language that can be easily used with HTML, requiring less configuration, and is a better option for websites designed for storing and managing content (ex, blogs and web stores).
+
+ 
+5. Compare and contrast echo and var_dump. 
+Echo and var_dump are functions used to return multiple requests; however, echo outputs expressions while var_dump holds the type and value of variables.
